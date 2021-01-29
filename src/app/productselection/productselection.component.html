@@ -1,0 +1,35 @@
+<div (click)="goBack()">
+
+
+</div>
+<div class="parwent">
+<div class="gridContainer">
+<div class="grid">
+    <div class="individualItem" *ngFor="let item of items;index as ind " >
+        <img class="itemImage" src="{{image_url+item.image}}"/>
+        <p class="itemName">{{item.name}}  </p>
+        <button (click)="viewClicked(ind)" class="itemView">VIEW</button>
+    </div>
+</div>
+</div>
+<div #displayDetails class="itemDetails">
+    <button href="#" (click)="closeActive()" class="closeButton">
+       X
+    </button>
+    <table>
+        <thead>
+            <th>FIELD</th>
+            <th>SPECIFICATION</th>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let headin of itemDetails;index as ind" >
+                <td>{{headin}}</td>
+                <td>{{items[selectedIndex][headin]}}</td>
+            </tr>
+        
+        </tbody>
+    </table>
+    <button (click)="selectItem()" class="closeButton selectButton">SELECT</button>
+</div>
+</div>

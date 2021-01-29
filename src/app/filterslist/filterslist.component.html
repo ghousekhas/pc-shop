@@ -1,0 +1,11 @@
+<div *ngIf="filtersList" class="filterslist">
+    <div class="fliterhead">
+        <p class="filterhtext">{{this.filterHeadText}}</p>
+    </div>
+    <div *ngFor="let item of list" class="filterListItem">
+        <input type="checkbox" title="item.name" class="checkboxListItem"/> 
+    </div>
+</div>
+<div *ngIf="filtersBar">
+    <div #slider ></div>
+</div>

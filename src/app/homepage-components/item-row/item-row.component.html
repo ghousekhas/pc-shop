@@ -1,0 +1,69 @@
+
+<ng-container  *ngIf="selected">
+<td class="td__component">
+  <a (click)="doSomething()"> {{item.name}} </a>
+</td>
+<td class="td_name">
+ <img 
+      src="{{image_base+item.item.image}}"
+      class="the_td_image"
+  />
+</td>
+<td class="td__name">
+  <a
+    href="https://pcpartpicker.com/product/tLCD4D/amd-ryzen-9-3900x-36-ghz-12-core-processor-100-100000023box"
+    >{{item.item.name}}</a
+  >
+</td>
+<td class="td__base">
+  <h6 class="xs-block md-hide">Base</h6>
+  {{item.item.price}}
+</td>
+
+<td class="td_normal td__price">
+  <h6 class="xs-block md-hide">Price</h6>
+  <a >{{item.item.price}}</a>
+</td>
+
+
+<td class="td_normal td__removeButton">
+  <a
+    (click)="removeProduct()"
+    class="button button--secondary button--icon button--neutral button--small pp_delete_part"
+    data-part-identifier='{"base_id":244367}'
+  >
+    <svg class="icon shape-delete"><use xlink:href="#shape-delete"></use></svg>
+    Remove
+  </a>
+</td>
+<td class="td_normal td__remove">
+  <a href="#" class="pp_delete_part" data-part-identifier='{"base_id":244367}'>
+    <svg class="icon shape-delete"><use xlink:href="#shape-delete"></use></svg>
+  </a>
+</td>
+</ng-container>
+<ng-container *ngIf="!selected">
+  <td class="td__component">
+    <a (click)="doSomething()"> {{item.name}} </a>
+  </td>
+  <td class="td_normal">
+    <a (click)="selectItem()" class="button  button--icon button--small">
+      <svg class="icon shape-add"><use xlink:href="#shape-add"></use></svg>
+      Choose {{item.name}}
+      </a>
+  </td>
+  <td class="td_component">
+    <a></a>
+  </td>
+  <td class="td_component">
+    <a></a>
+  </td>
+  <td class="td_component">
+    <a></a>
+  </td>
+  <td class="td_component">
+    <a></a>
+  </td>
+  
+</ng-container>
+

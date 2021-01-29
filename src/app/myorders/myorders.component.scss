@@ -1,0 +1,149 @@
+.itemDetails{
+    width: 80vw;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-left: 10vw;
+    background-color: azure;
+    margin-top: 10vh;
+}
+
+th {
+    padding: 10px;
+    background-color: gray;
+    margin: 10vh;
+    font-size: large;
+}
+
+tr {
+    margin: 4px;
+    background-color: #ccc7c7;
+    padding: 4px;
+    font-size: larger;
+}
+
+// .item {
+//     height: 200px;
+//     margin: 10px;
+//     // background-color: red;
+// }
+
+// .gridContainer {
+//   position: absolute;
+//   top: 0;
+//   width: 100vw;
+//   overflow-y: scroll;
+//   -ms-overflow-style: none;  
+//   scrollbar-width: none;  
+//   height: 100vh;
+// }
+
+// .parwent {
+//   height: 100vh;
+//   width: 100vw;
+//   align-content: center;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .grid {
+//   padding-right: 20vw;
+//   padding-left: 20vw;
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+//   grid-gap: 10px;
+// }
+
+// .individualItem{
+//   display: flex;
+//   flex-direction: column;
+//   padding: 20px;
+//   justify-content: flex-start;
+//   align-content: center;
+//   border-color: gray;
+//   border-width: 4px;
+//   border-radius: 25px;
+//   margin-right: 10px;
+//   margin-left: 10px;
+//   margin-top: 10px;
+
+//   box-shadow: 5px 3px 2px 3px;
+// }
+
+// .itemImage{
+//   width: 50%;
+//   align-self: center;
+//   aspect-ratio: 1;
+//   padding: 10px;
+//   border-radius: 5px;
+//   margin-left: 25%;
+//   margin-right: 25%;
+// }
+// .itemName{
+//   height: 30%;
+//   font-size: auto;
+//   color: gray;
+//   font-weight: 600;
+//   padding: 10px;
+//   width: 100%;
+//   text-align: center;
+// }
+
+// .itemView{
+//   height: 20%;
+//   background-color: #271d9a;
+//   color: white;
+//   font-weight: bold;
+//   font-size: auto;
+//   width: 100%;
+//   margin: 3px;
+//   padding: 3px;
+//   border-radius: 15px;
+
+// }
+
+// .itemDetails {
+//   position: absolute;
+//   bottom: 20vw;
+//   left: 20vw;
+
+//   background-color: aliceblue;
+//   align-self: center;
+//   justify-self: center;
+//   margin: auto;
+//   display: none;
+//   padding: 20px;
+//   width: 60vw;
+//   height: auto;
+//   align-content: center;
+//   align-items: center;
+//   justify-content: flex-start;
+//   flex-direction: column;
+
+// }
+
+// .closeButton {
+//   float: right;
+//   align-content: flex-end;
+//   justify-self: flex-end;
+//   align-self: flex-end;
+//   font-size: xx-large;
+//   font-weight: bolder;
+//   background-color: gray;
+
+
+// }
+
+// .selectButton {
+//   background-color: #271d9a;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   padding-top: 5px;
+//   padding-bottom: 5px;
+//   border-radius: 10px;
+//   color: white;
+//   font-size: medium;
+// }
+
+// .active {
+//   display: flex;
+// }
